@@ -1,0 +1,166 @@
+<!--File: portfolio.html
+	Author: Crystal Ho
+	Class: Web/Mobile Design Winter 2022-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Oberon's Portfolio </title>
+
+		<!--Bootstrap-->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" href="css/stylesheet.css">
+		<link rel="stylesheet" href="css/lightbox.css">
+		<script type="text/javascript" src="javascript/buttons.js"></script>
+	</head>
+
+	<body>
+		<div class="wrapper">
+
+			<!--sidebar-->
+			<div class="sidebar">
+				<div class="profile-box">
+					<img src="images/Oberon_Profile.jpg" alt="Oberon Profile Img" width="60%">
+				</div>
+
+				<h3 style="margin:0px">Oberon</h3> <br>
+				<p style="color:#271e62; text-align:center; margin:0px;">Fashionista, Hobbyist, Fabulous</p>
+				<br>
+
+				<!--vertical menu-->
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about-me.html">About Me</a></li>
+					<li><a class="active" href="portfolio.html">Portfolio</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contact-page.html">Contact Me</a></li>
+				</ul>
+			</div>
+
+			<div class="main">
+				<!-- Images used to open the lightbox -->
+				<div class="row">
+					<div class="column">
+						<img src="images/Summer_Wear.jpg" alt="Summer Wear Close-Up" width="70%" onclick="openModal();currentSlide(1)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="images/Summer_Wear2.jpg" alt="Summer Wear Full Body" width="70%" onclick="openModal();currentSlide(2)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="images/red.jpg" alt="Red outfit" width="70%" onclick="openModal();currentSlide(3)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="images/coat_1.jpg" alt="Fur coat 1" width="70%" onclick="openModal();currentSlide(4)" class="hover-shadow">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="column">
+						<img src="images/blue_1.jpg" alt="Tank Top w/ coat" width="70%" onclick="openModal();currentSlide(1)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="images/tank_1.jpg" alt="Tank Top" width="70%" onclick="openModal();currentSlide(2)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="images/tank_2.jpg" alt="Standing up" width="70%" onclick="openModal();currentSlide(3)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="images/coat_2.jpg" alt="Fur coat 2" width="70%" onclick="openModal();currentSlide(4)" class="hover-shadow">
+					</div>
+				</div>
+
+				<!-- The Modal/Lightbox -->
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+
+						<div class="mySlides">
+							<div class="numbertext">1 / 8</div>
+							<img src="images/Summer_Wear.jpg" style="width:30%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">2 / 8</div>
+							<img src="images/Summer_Wear2.jpg" style="width:30%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">3 / 8</div>
+							<img src="images/red.jpg" style="width:30%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">4 / 8</div>
+							<img src="images/coat_1.jpg" style="width:30%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">5 / 8</div>
+							<img src="images/blue_1.jpg" style="width:30%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">6 / 8</div>
+							<img src="images/tank_1.jpg" style="width:30%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">7 / 8</div>
+							<img src="images/tank_2.jpg" style="width:30%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">8 / 8</div>
+							<img src="images/coat_2.jpg" style="width:30%">
+						</div>
+
+						<!-- Next/previous controls -->
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+						<!-- Thumbnail image controls -->
+						<div class="column">
+							<img class="demo" src="images/Summer_Wear.jpg" width="40%" onclick="currentSlide(1)">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="images/Summer_Wear2.jpg" width="40%" onclick="currentSlide(2)">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="images/red.jpg" width="40%" onclick="currentSlide(3)">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="images/coat_1.jpg" width="40%" onclick="currentSlide(4)">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="images/blue_1.jpg" width="40%" onclick="currentSlide(5)">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="images/tank_1.jpg" width="40%" onclick="currentSlide(6)">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="images/tank_2.jpg" width="40%" onclick="currentSlide(7)">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="images/coat_2.jpg" width="40%" onclick="currentSlide(8)">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

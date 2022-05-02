@@ -1,0 +1,195 @@
+/*
+File: stylesheet.css
+Author: Crystal Ho
+Class: Web/Mobile Design Winter 2022
+*/
+
+body {
+	background-color: black;
+	font-family: 'Lucida Console', monospace;
+}
+
+h3 {
+	text-align: center;
+	font-family: 'Lucida Handwriting', cursive;
+	color: #271e62;
+}
+
+p {
+	color: white;
+}
+
+img {
+	border: 10px solid darkslategrey;
+	display: block;
+	margin: 25px;
+	padding: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main, .sidebar {
+	border: none;
+	padding: 1%;
+	background-color: #4682B4;
+}
+
+.main2 {
+	border: none;
+	padding: 1%;
+	margin-top: 2%;
+	background-color: black;
+}
+
+.main, .main2 {
+	width: 72%;
+	height: auto;
+}
+
+.sidebar {
+	width: 25%;
+	height: 100vh;
+}
+
+.sidebar {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+ul {
+	list-style-type: none;
+	margin: auto;
+	padding: 0;
+	width: 55%;
+	background-color: darkslategrey;
+	font-size: 100%;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 4% 8%;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: dimgray;
+	text-decoration: none;
+}
+
+.active {
+	background-color: black;
+}
+
+.content-box {
+	border: 20px groove #271e62;
+	background-color: darkslategrey;
+	margin: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+}
+
+figcaption {
+	color: white;
+	font-size: 10px;
+	text-align: center;
+}
+
+.screen {
+	position: absolute;
+	border: none;
+	margin-left: 60%;
+	margin-top: 1px;
+	z-index: -10;
+}
+
+.screen2 {
+	position: absolute;
+	border: none;
+	margin-left: 65%;
+	margin-top: 1px;
+	z-index: 20;
+}
+
+.mainPgblock {
+	position: relative;
+	margin-right: 50%;
+	margin-top: 250px;
+	padding: none;
+	z-index: 10;
+}
+
+.main-text {
+	color: white;
+}
+
+.about-text {
+	color: white;
+	font-family: 'Lucida Handwriting', cursive;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.button1 {
+	background-color: darkslategrey;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	font-size: 16px;
+}
+
+.gallery img {
+	margin: 10px;
+	float: left;
+	width: auto;
+	border: 2px solid white;
+}
+
+.gallery a:hover {
+	opacity: 50%;
+}
+
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+}
+
+input[type=submit] {
+	background-color: darkslategrey;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+	input[type=submit]:hover {
+		background-color: dimgray;
+	}
+
+.container {
+	width: 70%;
+	border-radius: 5px;
+	background-color: #4682B4;
+	padding: 20px;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+}

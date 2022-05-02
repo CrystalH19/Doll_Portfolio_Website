@@ -1,0 +1,62 @@
+<!--File: index.html
+	Author: Crystal Ho
+	Class: Web/Mobile Design Winter 2022-->
+	
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title> I am Oberon </title>
+		
+		<!--Bootstrap-->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		
+		<link rel="stylesheet" href="css/stylesheet.css">
+		<script type = "text/javascript" src="javascript/buttons.js"></script>
+	</head>
+	
+	<body>
+		<div class = "wrapper">
+		
+			<!--sidebar-->
+			<div class = "sidebar">
+				<div class = "profile-box">
+					<img src = "images/Oberon_Profile.jpg" alt = "Oberon Profile Img" width = "60%">
+				</div>
+				
+				<h3 style = "margin:0px">Oberon</h3> <br>
+				<p style = "color:#271e62; text-align:center; margin:0px;">Fashionista, Hobbyist, Fabulous</p>
+				<br>
+				
+				<!--vertical menu-->
+				<ul>
+					<li><a class = "active" href = "index.html">Home</a></li>
+					<li><a href = "about-me.html">About Me</a></li>
+					<li><a href = "portfolio.html">Portfolio</a></li>
+					<li><a href = "blog.html">Blog</a></li>
+					<li><a href = "contact-page.html">Contact Me</a></li>
+				</ul>
+				
+			</div>
+
+			<div class = "mainPgblock">
+				<h2 class = "main-text">Hello, I am Oberon</h2>
+				<button type="button" onClick = "mainPage()" class="btn btn-default">My Portfolio</button>
+				
+				<!-- Previous js button ver:
+				<button id="mainButton" onClick = "mainPage()" class= "button1">My Portfolio</button>
+				-->
+				
+			</div>
+			
+			<img class= "screen" src = "images/Main_Page2.png" height = "98%">
+		
+		</div>
+	</body>
+</html>
